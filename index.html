@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos da Bia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span class="material-symbols-outlined" id="menu" onclick="OpenMenu()">
+            menu
+            </span>
+        <a href="#"><img src="img/logo bia.png" alt="" id="logo"></a>
+        <a href="https://www.ifood.com.br" target="_blank"><img src="img/ifood.png" alt="" id="ifood"></a>
+        
+    </header>
+        <div id="side-bar">
+        
+            <a href="#bvd">Inicio</a>
+            <a href="#bolos">Bolos Mais vendidos</a>
+            <a href="#sabores">Sabores</a>
+            <a href="#footer">Sobre nós</a>
+        </div>
+    <main>
+        <div id="bvd">
+           <h1>Seja bem-vindo(a)</h1>
+           <h2>Confira alguns de nossos bolos mais vendidos!</h2>
+           
+        </div>
+        <div id="bolos">
+                <div class="display">
+                    <img src="img/bolo cenoura.jpg" alt="">
+                    <p>Cenoura com Chocolate</p>
+                </div>
+                <div class="display">
+                    <img src="img/bolo-gourmet.jpg" alt="">
+                    <p>Gourmet de Frutas</p>
+                </div>
+                <div  class="display">
+                    <img src="img/bolo_de_fuba.jpg" alt="">
+                    <p>Laranja</p>
+                </div>
+            
+        </div>
+        <section id="cardapio">
+            <div id="sabores">
+                <li><p>Bolos simples</p>
+                    <ul>
+                      <li>Laranja<span>45 R$</span></li>
+                      <li>Banana<span>50 R$</span></li>
+                      <li>Fubá<span>35 R$</span></li>
+                      <li>Chocolate<span>60 R$</span></li>
+                      <li>Cenoura com Chocolate<span>55 R$</span></li>
+                    </ul>
+                  </li>
+                  <li><p>Bolos Gourmet</p>
+                    <ul>
+                      <li>Frutas<span>65 R$</span></li>
+                      <li>Brigadeiro<span>40 R$</span></li>
+                      <li>Maracujá<span>30 R$</span></li>
+                      <li>Limão<span>70 R$</span></li>
+                      <li>Beijinho<span>40 R$</span></li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+            <div id="slogan">
+                <p>"Bolos feitos com amor e dedicação"</p>
+                <img src="img/logo bia.png" alt="">
+            </div>
+        </section>
+        
+        
+    </main>
+    <section id="footer">
+        <h1>Sobre nós</h1>
+        <div id="dados">
+            <div id="end">
+                <h2>Endereço</h2>
+                <p>Rua das Flores, 123</p>
+                <p>Bairro Imaginário</p>
+                <p>Cidade dos Sonhos, Estado dos Encantos</p>
+                <p>CEP: 12345-678</p>
+            
+                
+            </div>
+            <div>
+                <h2>Whatsapp</h2>
+                <p>19-989898998</p>
+                <h2>Instagram</h2>
+                <p>@bolosdabia</p>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <div id="creditos">
+            <p>Site criado por <a href="#">Gustavo Melo.</a> Tudo aqui é meramente material de estudo.</p>
+        </div>
+    </footer>
+    <script>
+        function OpenMenu() {
+            let open = document.getElementById('side-bar')
+            if(open.style.display == 'none') {
+                open.style.display = 'flex'
+                open.style.position = 'fixed'
+            }else {
+                open.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>

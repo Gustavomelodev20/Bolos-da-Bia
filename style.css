@@ -1,0 +1,314 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+:root {
+    --rosa: #FF83A8;
+    --amarelo: #FECA7A;
+    --marrom: #614D48;
+    --azul: #9FE4E0;
+}
+@keyframes intro {
+    from {
+     margin-left: 100%;
+    }
+    to {
+     margin-left: 0%;
+    }
+ }
+ @keyframes introM {
+    from {
+        height: 10px;
+    }
+    to {
+        height: 400px;
+    }
+ }
+
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--rosa);
+    
+}
+#side-bar {
+    display: none;
+    flex-direction: column;
+    background-color: var(--marrom);
+    height: 400px;
+    width: 180px;
+    margin-inline: 10px;
+    margin-top: 11vh;
+    gap: 70px;
+    border-bottom-left-radius: 25px ;
+    border-bottom-right-radius: 25px ;
+    box-shadow: 3px 0px 2px rgba(0, 0, 0, 0.548);
+    overflow: hidden;
+
+    animation-name: introM;
+    animation-duration: 0.5s;
+}
+
+#side-bar a {
+    text-decoration: none;
+    color: white;
+    margin-inline: 10px; 
+    font-size: 1.2em;
+    
+    font-weight: bold;   
+    overflow: hidden;
+}
+#side-bar a:hover {
+    color: var(--rosa);
+    
+}
+header {
+    height: 11vh;
+    background-color: var(--marrom);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    overflow: hidden;
+
+    
+}
+header img {
+    width: 5vw;
+    height: 5vh;
+    margin-right: 20px;
+    
+}
+#ifood {
+    height: 80px;
+    width: 80px;
+}
+#menu {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    margin-inline: 60px;
+    overflow-y: hidden;
+}
+#menu:hover {
+    cursor: pointer;
+}
+#logo {
+    margin-right: 50px ;
+    width: 7em;
+    height: 7em;
+}
+#bvd {
+    width: 100vw;
+    background-color: var(--amarelo);
+    margin-top: 30px;
+    height: 15vw;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#bvd h1, #bvd h2 {
+    padding: 20px; 
+
+}
+#bolos img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 50px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.308);
+   
+    
+}
+#bolos img:hover {
+    border: 5px solid white;
+    cursor: pointer;
+}
+#bolos {
+    background-color: var(--rosa);
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    animation-name: intro;
+    animation-duration: 3s;
+    overflow: hidden;
+    
+    
+}
+.display {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    font-family: "Exo 2", sans-serif;
+    overflow: hidden;
+    width: 25vw;
+    
+}
+#cardapio {
+    height: 100vh;
+    background-color: var(--amarelo);
+    width: 100vw;
+   
+}
+#slogan {
+    text-align: center;
+    
+    font-family: "Exo 2", sans-serif;
+    color: white;
+    font-size: 3em;
+    height: 30vh;
+
+    overflow: hidden;
+    
+}
+#slogan img {
+    background-color: var(--marrom);
+    border-radius: 50%;
+    width: 9vw;
+    margin-top: 20px;
+    
+    
+}
+#sabores {
+    display: flex;
+    flex-direction: flex;
+    gap: 15vw;
+    margin-left: 10px;
+    height: 70vh;
+}
+#sabores p{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin-block: 20px;
+}
+#sabores ul {
+    padding-inline: 20px;
+    font-family: "Exo 2", sans-serif;
+    width: 100vw;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+#sabores li {
+    width: 40vw;
+    margin-bottom: 10px;  
+    list-style-type: none;
+}
+#sabores span {
+    display: block;
+      margin-top: 10px;
+      text-align: end;
+      margin-right: 50px;
+      color: var(--marrom);
+}
+#sabores  li span {
+    border-top: 1px dashed #000;
+    padding-top: 10px;
+  }
+#footer {
+    background-color: var(--marrom);
+    width: 100vw;
+    height: 90vh;
+    color: white;
+    overflow: hidden;
+    
+}
+#footer h1, footer h2 {
+    font-family: "Exo 2", sans-serif;
+    
+}
+#footer h2 {
+    padding-block: 10px;
+}
+#footer p {
+ padding: 2px;
+ font-size: 1.8em;
+}
+#footer h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 3em;
+}
+#dados {
+    display: flex;
+    margin-block: 50px;
+    justify-content: space-around;
+
+}
+#creditos {
+    text-align: center;
+    padding-block: 20px;
+    color: white;
+    font-weight: bold;
+}
+#creditos a {
+    color: white;
+}
+
+@media screen and (max-width: 768px ) {
+    #side-bar {
+        flex-direction: row;
+        width: 100vw;
+        height: 80px;
+        margin: 0;
+        margin-top: 11vh;
+        gap: 20px;
+        border-bottom-left-radius: 0px ;
+        border-bottom-right-radius: 0px ;
+        font-size: 1.2em;
+        line-height: 80px;
+        animation-name: none;
+    
+    }
+    #ifood {
+        width: 100px;
+        height: 80px;
+    }
+    #bvd {
+        height: 30vh;
+    }
+    #bolos {
+        justify-content: center;
+        font-size: 1em;
+        height: 50vw;
+    }
+    #bolos img{
+        margin-top: 40px;
+        width: 160px;
+        height: 180px;
+        
+    }
+    .display  {
+        height: 300px;
+        width: 300px;
+        
+    }
+    .display p {
+        font-size: 0.4em;
+        width: 180px;
+        margin-top: 20px;
+        
+    }
+    #slogan img {
+    width: 2em;
+
+    }
+    #dados {
+        flex-direction: column;
+        gap: 50px;
+        margin-inline: 20px;
+    }
+ 
+}

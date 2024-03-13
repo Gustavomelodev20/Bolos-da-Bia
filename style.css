@@ -117,11 +117,9 @@ header img {
 
 }
 #bolos img{
-    width: 300px;
-    height: 300px;
     border-radius: 50%;
-    margin-right: 50px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.308);
+    width: 400px;
+    height:  400px;
    
     
 }
@@ -132,23 +130,24 @@ header img {
 #bolos {
     background-color: var(--rosa);
     width: 100vw;
+    height: 80vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 90vh;
+    font-size: 2em;
     animation-name: intro;
-    animation-duration: 3s;
-    overflow: hidden;
+    animation-duration: 2s;
+    
+    
     
     
 }
 .display {
-    text-align: center;
-    font-size: 2em;
+    
     color: white;
-    font-family: "Exo 2", sans-serif;
+    text-align: center;
+    font-family: "Exo 2";
     overflow: hidden;
-    width: 25vw;
     
 }
 #cardapio {
@@ -280,27 +279,18 @@ header img {
         height: 30vh;
     }
     #bolos {
-        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
         font-size: 1em;
-        height: 50vw;
+        height: 40vw;
     }
     #bolos img{
-        margin-top: 40px;
-        width: 160px;
+        
+        width: 180px;
         height: 180px;
         
     }
-    .display  {
-        height: 300px;
-        width: 300px;
-        
-    }
-    .display p {
-        font-size: 0.4em;
-        width: 180px;
-        margin-top: 20px;
-        
-    }
+    
     #slogan img {
     width: 2em;
 
